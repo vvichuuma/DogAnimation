@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+ul {
+  width: 15rem;
+  justify-content: space-between;
+  float: right;
+  margin-top: -1.5rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header h2 {
+  width: 10rem;
+}
+
+/* imageContainer:  */
+
+.image {
+  width: 100%;
+  margin-bottom: 30rem;
+}
+
+#Dc img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 0.7;
+}
+
+#PetLovers {
+  text-align: center;
+  margin-top: 18rem;
+  font-size: 5rem;
+  color: black;
+}
+
+.descriptions {
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-areas:
+    "item-1 . ."
+    ". . item-2 "
+    ". item-3 .";
+}
+
+#item_1 {
+  grid-area: item-1;
+  margin: 0.5rem;
+}
+
+#item_2 {
+  grid-area: item-2;
+  margin: 0.5rem;
+}
+
+#item_3 {
+  grid-area: item-3;
+  margin: 0.5rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+#navBar {
+  width: 100%;
+
+  background-color: black;
+  color: white;
+}
+
+.add {
+  animation-name: drive;
+  animation-duration: 1s;
+}
+
+@keyframes drive {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+#navBar li {
+  list-style-type: none;
+  text-align: center;
+  border: 0.1rem solid white;
+  padding: 0.4rem;
+}
+
+.blocks {
+  display: block;
+}
+
+.nones {
+  display: none;
+}
+
+.descriptions div {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #navBar {
+    display: none;
+  }
+  #PetLovers {
+    font-size: 2rem;
+  }
+  ul {
+    display: none;
+  }
+  .ham {
+    display: block;
+    float: right;
+    text-align: end;
+    margin-top: -2rem;
+  }
+
+  .descriptions {
+    padding: 1rem;
+    margin-top: 5%;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-areas:
+      "item-1"
+      "item-2 "
+      "item-3";
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #navBar {
+    display: none;
+  }
+  #PetLovers {
+    font-size: 2.5rem;
+  }
+
+  ul {
+    display: none;
+  }
+  .ham {
+    display: block;
+    float: right;
+    text-align: end;
+    margin-top: -2rem;
+  }
+
+  .descriptions {
+    padding: 1rem;
+    margin-top: 5%;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-areas:
+      "item-1"
+      "item-2 "
+      "item-3";
+  }
+
+  .descriptions h1 {
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #navBar {
+    display: none;
+  }
+  #PetLovers {
+    font-size: 3.5rem;
+  }
+  ul {
+    display: none;
+  }
+  .ham {
+    display: block;
+    float: right;
+    text-align: end;
+    margin-top: -2rem;
+  }
+
+  .descriptions {
+    padding: 1rem;
+    margin-top: 5%;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-areas:
+      "item-1"
+      "item-2 "
+      "item-3";
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #navBar {
+    display: none;
+  }
+  #PetLovers {
+    font-size: 4rem;
+  }
+  ul {
+    display: flex;
+  }
+  .ham {
+    display: none;
+  }
+
+  .descriptions {
+    padding: 1rem;
+    margin-top: 5%;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-areas:
+      "item-1 . ."
+      ". . item-2 "
+      ". item-3 .";
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #navBar {
+    display: none;
+  }
+
+  #PetLovers {
+    font-size: 5rem;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .descriptions {
+    padding: 1rem;
+    margin-top: 5%;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-areas:
+      "item-1 . ."
+      ". . item-2 "
+      ". item-3 .";
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Pet's Design</h2>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+        </ul>      
+      </nav>
+      <h2 class="ham" onclick="display()">&#9776</h2>
+    </header>
+
+    <div id="navBar" data-aos="fade-down">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+    </div>
+
+    <div class="image">
+      <h1 id="PetLovers" data-aos="fade-down">
+        Pet Lover's Come Over Here!
+      </h1>
+      <div id="Dc">
+        <img src="./img/cutes.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="descriptions">
+      <div id="item_1" data-aos="slide-right">
+        <h1>Dog Lover's</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          numquam maiores amet, repudiandae praesentium modi saepe dolorum nam
+          quisquam ratione doloremque dolorem nostrum. Sint cum laudantium
+          facilis libero nihil! Reprehenderit!
+        </p>
+      </div>
+
+      <div id="item_2" data-aos="slide-left">
+        <h1>Cat Lover's</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+          blanditiis ab perferendis provident repellendus, nostrum modi,
+          voluptatibus, repellat nam ea id molestias amet deleniti numquam
+          voluptas excepturi? Atque, fugiat libero.
+        </p>
+      </div>
+
+      <div id="item_3" data-aos="flip-down">
+        <h1>Services offered</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+          eligendi maxime. Consectetur sit necessitatibus blanditiis nemo
+          reprehenderit voluptates, atque dolorum officia explicabo tempora
+          molestiae, ipsa illo temporibus ea voluptas vitae nostrum cum rem
+          fugit placeat ad adipisci accusamus esse. Non quaerat, nulla
+          voluptatibus placeat assumenda libero quas in perspiciatis sint.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <h2>Vishnu - Web Developer - &#9400 2019</h2>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: false
+      });
+    </script>
+
+    <script src="indi.js"></script>
+  </body>
+</html>
